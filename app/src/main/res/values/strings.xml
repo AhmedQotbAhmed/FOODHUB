@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FOODHUB</string>
+    <string name="already_have_an_account">Already have an account? </string>
+    <string name="sign_in"> <u>Sign In</u> </string>
+    <string name="sign_in_with">sign in with</string>
+    <string name="welcome_to_nfoodhub">Welcome to \n<font color='#FE724C'>FoodHub</font></string>
+    <string name="i_don_t_recevie_a_code_please_resend">I don’t recevie a code! <font color='#FE724C'>Please resend</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_9_50"><font size='15'>$</font>9.50</string>
+    <string name="brown_th">Brown the beef better. Lean ground beef – I like to use 85% lean angus. Garlic – use fresh chopped. Spices – chili powder, cumin, onion powder.</string>
+
+</resources>

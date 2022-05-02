@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:paddingHorizontal="19dp">
+
+    <ImageView
+        android:id="@+id/intro_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/point"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:cropToPadding="true"
+        android:paddingTop="50dp"
+        android:src="@drawable/onp1"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/intro_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_point1" />
+
+    <TextView
+        android:id="@+id/intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/intro_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:text="Browse your  menu and order directly"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/intro_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:gravity="center"
+        android:text="Our app can send you everywhere, even space. For only $2.99 per month"
+        android:textColor="@color/hint_color"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.NewAddress">
+
+
+
+  <LinearLayout
+      android:id="@+id/linear_sign_up"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginHorizontal="25dp"
+      android:layout_marginBottom="28dp"
+      android:orientation="horizontal"/>
+
+  <Button
+      android:id="@+id/btn_signup"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginHorizontal="65dp"
+      android:layout_marginBottom="30dp"
+      android:background="@drawable/buttom_shape"
+      android:fontFamily="@font/sofia_pro_bold_az"
+      android:gravity="center"
+      android:paddingVertical="15dp"
+      android:text="save"
+      android:textColor="@color/white"
+      android:textSize="15sp" />
+
+  <LinearLayout
+      android:id="@+id/linear_lbl_pass"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/btn_signup"
+      android:layout_marginHorizontal="27dp"
+      android:layout_marginBottom="30dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:text="state (include house number)"
+        android:textColor="@color/hint_light_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_shape"
+        android:drawableEnd="@drawable/ic_drop_down"
+        android:inputType="textPassword"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="18dp"
+        android:textSize="18sp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear_lbl_email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/linear_lbl_street"
+      android:layout_marginHorizontal="27dp"
+      android:layout_marginBottom="22dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:text="Mobile number"
+        android:textColor="@color/hint_light_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_shape"
+        android:inputType="phone"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="18dp"
+        android:textSize="18sp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear_lbl_street"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/linear_lbl_pass"
+      android:layout_marginHorizontal="27dp"
+      android:layout_marginBottom="22dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:text="City"
+        android:textColor="@color/hint_light_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_shape"
+        android:inputType="phone"
+        android:drawableEnd="@drawable/ic_drop_down"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="18dp"
+        android:textSize="18sp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear_lbl_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/linear_lbl_email"
+      android:layout_marginHorizontal="27dp"
+      android:layout_marginBottom="22dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:text="Full name"
+        android:textColor="@color/hint_light_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_shape"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="18dp"
+        android:textSize="18sp" />
+  </LinearLayout>
+
+
+</RelativeLayout>

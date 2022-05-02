@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <TextView
+
+                android:id="@+id/title_like_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:fontFamily="@font/sofia_pro_bold_az"
+                android:paddingHorizontal="25dp"
+                android:text="What would you like to order"
+                android:textColor="@color/title_color"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_search"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/title_like_order"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+
+                >
+
+                <SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:background="@drawable/search_shape"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@android:color/transparent"
+                    android:queryHint="Find for food or restaurant..."
+                    android:searchIcon="@drawable/ic_search"
+                    android:theme="@style/ActionBarThemeOverlay" />
+
+                <ImageButton
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_weight="1.2"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_filter" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/food_type_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_search"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                app:layoutManager="LinearLayoutManager"
+                tools:itemCount="10"
+                tools:listitem="@layout/item_food_type" />
+
+            <LinearLayout
+
+                android:id="@+id/linear_featured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_type_recycler_view"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="25dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:text="Featured restaurants"
+                        android:textColor="@color/title_color"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="17dp"
+                        android:layout_weight="1"
+
+                        android:fontFamily="@font/sofia_pro_regular_az"
+                        android:text="View All >"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/orange"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featured_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_search"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/item_featured_restaurants" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_featured"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:paddingHorizontal="25dp"
+
+                    android:text="Popular items"
+                    android:textColor="@color/title_color"
+                    android:textSize="18dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/popular_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_search"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/item_popular" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
