@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MyOrdersHistory">
+
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/shape_toggle"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btn_upcoming"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_toggle_2"
+            android:fontFamily="@font/sofia_pro_medium_az"
+            android:text="Upcoming"
+            android:textColor="@color/orange"
+            android:textSize="14dp" />
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btn_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_toggle_1"
+            android:fontFamily="@font/sofia_pro_medium_az"
+            android:text="History"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <include layout="@layout/item_restturant_history" />
+
+    <include layout="@layout/item_restturant_history" />
+
+    <include layout="@layout/item_restturant_history" />
+
+    <include layout="@layout/item_restturant_history" />
+</LinearLayout>

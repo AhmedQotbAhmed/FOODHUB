@@ -22,11 +22,18 @@
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/ic_point3.xml" value="0.171" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/search_shape.xml" value="0.1" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shadow_shape.xml" value="0.171" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_bg_profile.xml" value="0.224" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_buttom_light.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_onboarding.xml" value="0.171" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_toggle.xml" value="0.224" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_toggle_1.xml" value="0.224" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_toggle_2.xml" value="0.224" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_delivery_address.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_intro.xml" value="0.2" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_new_addres.xml" value="0.358695652173913" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/food_type_shape.xml" value="0.17685185185185184" />
@@ -34,11 +41,17 @@
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/fragment_favorites.xml" value="0.23177083333333334" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/home_screen.xml" value="0.22" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_add_extra.xml" value="0.18206521739130435" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_delivery address.xml" value="0.36666666666666664" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_delivery_address.xml" value="0.28940217391304346" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_featured_restaurants.xml" value="0.33" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_food_type.xml" value="0.23177083333333334" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_foodtype.xml" value="0.5" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_popular.xml" value="0.23177083333333334" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_restturant_history.xml" value="0.2" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_restturant_history_upcoming.xml" value="0.333786231884058" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/layout_screen.xml" value="0.358695652173913" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/my_orders_history.xml" value="0.22" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/onboarding.xml" value="0.18802083333333333" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/onboarding_item.xml" value="0.12" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/phone_registration.xml" value="0.358695652173913" />
@@ -61,7 +74,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.18" />
+        <option name="scale" value="0.22" />
       </ProjectState>
     </option>
   </component>
