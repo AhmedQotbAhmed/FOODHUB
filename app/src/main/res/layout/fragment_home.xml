@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5E5E5"
     tools:context=".fragment.HomeFragment">
 
     <ScrollView
@@ -16,6 +17,9 @@
           >
 
             <include
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
                 android:id="@+id/toolbar"
                 layout="@layout/toolbar" />
 

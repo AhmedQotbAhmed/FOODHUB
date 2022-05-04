@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.OrderDetails">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="139dp"
+            android:layout_height="102dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/starbuck"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:gravity="start"
+                    android:text="20 Jun, 10:30"
+                    android:textColor="@color/hint_light_color"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:gravity="end"
+                    android:text="#264100"
+                    android:textColor="@color/hint_light_color"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/ic_true"
+                android:drawablePadding="6dp"
+                android:fontFamily="@font/sofia_pro_bold_az"
+                android:text="Starbuck"
+                android:textColor="@color/title_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_ellipse_green"
+                android:drawablePadding="6dp"
+                android:fontFamily="@font/sofia_pro_regular_az"
+                android:text="Order Delivered"
+                android:textColor="@color/green"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/sofia_pro_semi_bold_az"
+                android:text="Details"
+                android:textColor="@color/title_color"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="6391 Elgin St. Celina, Delaware 10299"
+                android:textColor="@color/title_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/sofia_pro_semi_bold_az"
+                android:text="Orders food"
+                android:textColor="@color/title_color"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="25dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/popular_food" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/linear_de1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linear_name"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="11dp">
+
+                    <TextView
+                        android:id="@+id/lbl_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/sofia_pro_bold_az"
+
+                        android:text="Salmon Salad"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/lbl_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/sofia_pro_regular_az"
+                        android:text="Spicy chicken, beef"
+                        android:textColor="@color/hint_color"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/sofia_pro_bold_az"
+                        android:gravity="bottom"
+                        android:text="@string/__9_50"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingVertical="80dp"
+                android:background="@drawable/card_shape"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sofia_pro_regular_az"
+                        android:text="Credit Card"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_cart_logo" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:gravity="center_horizontal"
+                    android:text="5341     1512448    54887 "
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:text="Total"
+                    android:textColor="@color/title_color"
+                    android:textSize="16dp" />
+                <RelativeLayout
+                    android:layout_gravity="end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+
+                        android:layout_toStartOf="@+id/le"
+                        android:fontFamily="@font/sofia_pro_regular_az"
+                        android:text="$59.08"
+                        android:textColor="@color/title_color"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/le"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sofia_pro_regular_az"
+                        android:text="LE"
+                        android:textColor="@color/hint_light_color"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_buttom_light"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Rate"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttom_shape"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Re-Order"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.foodhub.recyclerView_adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,7 +9,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.foodhub.R;
+import com.example.foodhub.ui.FoodDetails;
+import com.example.foodhub.ui.Home_Screen;
+import com.example.foodhub.ui.VerificationCode;
 
 public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Holder> {
     Context context;
@@ -50,6 +55,13 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Holder
 
         public Holder(@NonNull View itemView) {
             super(itemView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    context.startActivity(new Intent(context, FoodDetails.class));
+                    Animatoo.animateSlideLeft(context);
+                }
+            });
 
 
         }

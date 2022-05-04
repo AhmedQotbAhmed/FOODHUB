@@ -9,16 +9,16 @@ import android.view.View;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.foodhub.R;
 
-public class Login extends AppCompatActivity {
+public class VerificationCode extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_verification_code);
     }
 
-    public void forgot_password(View view) {
-        startActivity(new Intent(Login.this, RessetPassword.class));
-        Animatoo.animateSlideLeft(Login.this);
+    public void change_password(View view) {
+        startActivity(new Intent(VerificationCode.this, Home_Screen.class));
+        Animatoo.animateSlideLeft(VerificationCode.this);
     }
 }

@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.food_details);
+        setContentView(R.layout.my_orders_history);
 //        rt = findViewById(R.id.ratingBar);
 //        LayerDrawable stars = (LayerDrawable) rt.getProgressDrawable();
 //
-//        stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
-////        String.valueOf(rt.getRating())
+//        stars.getDrawable(2).setColorFilter(getColor(R.color.orange), PorterDuff.Mode.SRC_ATOP);
+//        String.valueOf(rt.getRating())
 
     }
 }

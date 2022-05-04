@@ -4,8 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".ui.Delivery_Address">
-    <include layout="@layout/toolbar"/>
-    <include layout="@layout/item_delivery_address"/>
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp" />
+
+    <include layout="@layout/item_delivery_address" />
+
+    <include layout="@layout/item_delivery_address" />
+
+
+    <Button
+        android:id="@+id/add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttom_shape"
+        android:fontFamily="@font/sofia_pro_semi_bold_az"
+        android:text="ADD NEW ADDRESS"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
 
 </LinearLayout>

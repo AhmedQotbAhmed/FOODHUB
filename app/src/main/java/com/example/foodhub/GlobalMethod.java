@@ -12,10 +12,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.foodhub.ui.Splash;
+
 public class GlobalMethod extends AppCompatActivity {
 
-    public  void go_screen(Class screen){
-        Intent i = new Intent(this,screen);
+    public  void go_screen(Context context, Class screen){
+        Intent i = new Intent(context,screen);
         startActivity(i);
     }
 

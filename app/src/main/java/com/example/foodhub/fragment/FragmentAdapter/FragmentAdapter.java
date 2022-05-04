@@ -37,7 +37,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             case 3:
                 return new FavoritesFragment();
             default:
-                return null;
+                return new FavoritesFragment();
         }
     }
 

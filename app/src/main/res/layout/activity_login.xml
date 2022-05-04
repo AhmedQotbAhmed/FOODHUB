@@ -171,16 +171,17 @@
         android:textSize="15dp" />
 
     <TextView
+        android:onClick="forgot_password"
         android:id="@+id/lbl_forgot_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_signup"
         android:layout_marginBottom="30dp"
+        android:fontFamily="@font/sofia_pro_medium_az"
+        android:gravity="center"
         android:text="Forgot password?"
         android:textColor="@color/orange"
-        android:gravity="center"
-        android:fontFamily="@font/sofia_pro_medium_az"
-        android:textSize="14sp"
-        android:layout_above="@+id/btn_signup"/>
+        android:textSize="14sp" />
 
 
     <LinearLayout

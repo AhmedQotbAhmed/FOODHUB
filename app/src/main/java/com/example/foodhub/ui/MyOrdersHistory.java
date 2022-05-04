@@ -26,6 +26,7 @@ GlobalMethod methods;
 
     public void onClick(View view) {
      toggle(view,view.getId());
+//        methods.toggle(view,view.getId());
     }
     public void toggle(View view, int id) {
         Button btn1 = findViewById(R.id.btn_upcoming);

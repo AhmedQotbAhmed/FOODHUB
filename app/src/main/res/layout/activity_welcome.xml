@@ -88,11 +88,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:fontFamily="@font/sofia_pro_medium_az"
                     android:text="FACEBOOK"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:textSize="14dp" />
 
 
             </LinearLayout>
@@ -107,27 +107,25 @@
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="13dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_google" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:gravity="center_vertical"
                     android:text="GOOGLE"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:textSize="14dp" />
             </LinearLayout>
 
         </LinearLayout>
 
         <TextView
+            android:onClick="Click"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="23dp"
@@ -215,7 +213,14 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <include layout="@layout/toolbar" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginEnd="-10dp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:src="@drawable/ic_skip" />
 
 
 </RelativeLayout>

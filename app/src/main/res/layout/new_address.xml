@@ -25,7 +25,7 @@
       android:layout_height="wrap_content"
       android:layout_alignParentBottom="true"
       android:layout_marginHorizontal="65dp"
-      android:layout_marginBottom="30dp"
+      android:layout_marginBottom="100dp"
       android:background="@drawable/buttom_shape"
       android:fontFamily="@font/sofia_pro_bold_az"
       android:gravity="center"

@@ -3,13 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:paddingHorizontal="25dp"
+    android:paddingVertical="30dp"
     android:layout_height="80dp"
-    android:layout_marginTop="20dp"
+
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
 
     <ImageButton
+
         android:layout_marginStart= "-14dp"
         android:id="@+id/navigation_btn"
         android:layout_width="0dp"
@@ -30,7 +32,7 @@
         android:layout_centerVertical="true"
         android:text="Deliver to \n 4102  Pretty View Lane"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
     <ImageView

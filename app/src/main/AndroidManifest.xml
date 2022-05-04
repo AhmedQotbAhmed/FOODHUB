@@ -10,14 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FOODHUB">
         <activity
+            android:name=".ui.FoodDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RessetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VerificationCode"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Splash"
+            android:exported="true"/>
+        <activity
+            android:name=".ui.OrderDetails"
+            android:exported="true" />
+        <activity
             android:name=".ui.Delivery_Address"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".ui.MyOrdersHistory"
             android:exported="true"/>
@@ -38,10 +47,19 @@
 
         <activity
             android:name=".ui.Home_Screen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GlobalMethod"
             android:exported="true" />
         <activity
             android:name=".ui.NewAddress"
-            android:exported="false" />
+            android:exported="true"/>
         <activity
             android:name=".ui.Login"
             android:exported="true" />
