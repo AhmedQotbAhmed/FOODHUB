@@ -8,9 +8,10 @@ import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.widget.RatingBar;
 
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends GlobalMethod {
     RatingBar rt;
 
     @Override

@@ -12,6 +12,7 @@ import androidx.viewpager.widget.ViewPager;
 
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 import com.example.foodhub.recyclerView_adapter.IntroViewPagerAdapter;
 import com.example.foodhub.model.ScreenItem;
@@ -19,7 +20,7 @@ import com.example.foodhub.model.ScreenItem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OnBoarding extends AppCompatActivity {
+public class OnBoarding extends GlobalMethod {
 
     IntroViewPagerAdapter pagerAdapter;
     ImageView next;
@@ -55,9 +56,8 @@ public class OnBoarding extends AppCompatActivity {
                 if (screenPager.getCurrentItem() < 2) {
                     screenPager.setCurrentItem((screenPager.getCurrentItem() + 1));
                 } else
-                    startActivity(new Intent(OnBoarding.this, Sign_Up.class));
-                Animatoo.animateSlideLeft(OnBoarding.this);
 
+                go_screen( Sign_Up.class);
 
             }
         });

@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class Sign_Up extends AppCompatActivity {
+public class Sign_Up extends GlobalMethod {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,7 @@ public class Sign_Up extends AppCompatActivity {
     }
 
     public void loin(View view) {
-        startActivity(new Intent(Sign_Up.this, Login.class));
-        Animatoo.animateSlideLeft(Sign_Up.this);
+
+        go_screen( Login.class);
     }
 }

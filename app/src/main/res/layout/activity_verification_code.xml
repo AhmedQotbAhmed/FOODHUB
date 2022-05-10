@@ -152,7 +152,7 @@
             android:layout_above="@+id/lbl_verifi"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/sofia_pro_semi_bold_az"
-            android:text="Vefification Code"
+            android:text="Verification Code"
             android:textColor="#141414"
             android:textSize="37dp"
             android:textStyle="bold" />

@@ -10,7 +10,7 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends GlobalMethod {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Splash.this,WelcomeActivity.class));
-                Animatoo.animateSlideLeft(Splash.this);
+
+                go_screen( WelcomeActivity.class);
                 finish();
             }
         }, 2000);

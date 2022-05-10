@@ -4,9 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class OrderDetails extends AppCompatActivity {
+public class OrderDetails extends GlobalMethod {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

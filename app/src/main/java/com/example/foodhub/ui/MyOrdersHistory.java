@@ -13,39 +13,22 @@ import com.example.foodhub.R;
 
 import java.util.zip.Inflater;
 
-public class MyOrdersHistory extends AppCompatActivity {
-GlobalMethod methods;
+public class MyOrdersHistory extends GlobalMethod {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_orders_history);
-        methods=new GlobalMethod();
 
     }
 
     public void onClick(View view) {
-     toggle(view,view.getId());
-//        methods.toggle(view,view.getId());
+     toggle(view.getId());
+
     }
-    public void toggle(View view, int id) {
-        Button btn1 = findViewById(R.id.btn_upcoming);
-        Button btn2 = findViewById(R.id.btn_history);
 
-        if (id==R.id.btn_upcoming){
-            btn1.setBackgroundResource(R.drawable.shape_toggle_1);
-            btn1.setTextColor(Color.WHITE);
-            btn2.setBackgroundResource(R.drawable.shape_toggle_2);
-            btn2.setTextColor(getColor(R.color.orange));
-        }
-        else
-        {
-            btn2.setBackgroundResource(R.drawable.shape_toggle_1);
-            btn2.setTextColor(Color.WHITE);
-            btn1.setBackgroundResource(R.drawable.shape_toggle_2);
-            btn1.setTextColor(getColor(R.color.orange));
-
-        }
-
+    public void goScreen_(View view) {
+        go_screen(OrderDetails.class);
     }
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".ui.MyOrdersHistory">
 
 
@@ -45,7 +46,8 @@
             android:textSize="14dp" />
     </LinearLayout>
 
-    <include layout="@layout/item_restturant_history" />
+    <include layout="@layout/item_restturant_history"
+        />
 
     <include layout="@layout/item_restturant_history" />
 

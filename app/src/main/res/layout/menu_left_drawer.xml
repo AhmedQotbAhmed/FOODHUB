@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity=""
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/my_orders"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/profile_image"
+                app:riv_corner_radius="60dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/sofia_pro_semi_bold_az"
+            android:text="Eljad Eendaz"
+            android:textColor="@color/title_color"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sofia_pro_regular_az"
+            android:text="prelookstudio@gmail.com"
+            android:textColor="@color/hint_light_color"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_orders"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_my_orders"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/My_Orders"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_profile_img" />
+
+
+    <TextView
+        android:id="@+id/lbl_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:drawableLeft="@drawable/ic_my_profile"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/My_Profile"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_orders" />
+
+
+    <TextView
+        android:id="@+id/delivery_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_delivery_address"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:gravity="center_vertical"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/Delivery_Address"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_profile" />
+
+
+    <TextView
+        android:id="@+id/payment_methods"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_payment_methods"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:gravity="center_vertical"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/Payment_Methods"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_address" />
+
+
+    <TextView
+        android:id="@+id/contact_us"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_contact_us"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:gravity="center_vertical"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/Contact_Us"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_methods" />
+
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_settings"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:gravity="center_vertical"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/Settings"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_us" />
+
+
+    <TextView
+        android:id="@+id/helps_faqs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_helps"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:gravity="center_vertical"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingVertical="15dp"
+        android:text="@string/Helps_FAQs"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/buttom_shape"
+        android:drawableLeft="@drawable/ic_off"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular_az"
+        android:onClick="goScreen_"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helps_faqs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

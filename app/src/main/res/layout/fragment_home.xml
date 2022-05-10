@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E5E5"
+    android:background="@color/background"
     tools:context=".fragment.HomeFragment">
 
     <ScrollView
@@ -13,22 +13,72 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-          >
+            android:layout_height="wrap_content">
 
-            <include
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:id="@+id/AppBarLayout"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:id="@+id/toolbar"
-                layout="@layout/toolbar" />
+                android:layout_marginTop="@dimen/_30sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:paddingStart="@dimen/_10sdp"
+                    style="@style/Widget.MaterialComponents.ActionBar.PrimarySurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:src="@drawable/profile" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:onClick="change"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/ic_down"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:fontFamily="@font/sofia_pro_medium_az"
+                            android:text="@string/Pretty"
+                            android:textColor="@color/title_color"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/sofia_pro_medium_az"
+                            android:gravity="center"
+                            android:text="4102  Pretty View Lane"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/_14sdp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
 
             <TextView
 
                 android:id="@+id/title_like_order"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/toolbar"
+                android:layout_below="@+id/AppBarLayout"
                 android:fontFamily="@font/sofia_pro_bold_az"
                 android:paddingHorizontal="25dp"
                 android:text="What would you like to order"
@@ -38,7 +88,7 @@
             <LinearLayout
                 android:id="@+id/linear_search"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/title_like_order"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_vertical"
@@ -51,7 +101,7 @@
                     android:id="@+id/search_view"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.8"
+                    android:layout_weight="3.2"
                     android:background="@drawable/search_shape"
                     android:iconifiedByDefault="false"
                     android:queryBackground="@android:color/transparent"
@@ -59,14 +109,18 @@
                     android:searchIcon="@drawable/ic_search"
                     android:theme="@style/ActionBarThemeOverlay" />
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="0dp"
-                    android:layout_height="44dp"
-                    android:layout_marginEnd="-12dp"
-                    android:layout_weight="1.2"
-                    android:background="@null"
-                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_2sdp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/shape_buttom_t"
+                    android:cropToPadding="false"
+                    android:onClick="filter"
+                    android:padding="@dimen/_11sdp"
+
                     android:src="@drawable/ic_filter" />
             </LinearLayout>
 
@@ -76,7 +130,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linear_search"
                 android:layout_marginTop="15dp"
+                android:clipToPadding="false"
                 android:orientation="horizontal"
+                android:paddingVertical="@dimen/_5sdp"
+                android:paddingStart="@dimen/_20sdp"
                 app:layoutManager="LinearLayoutManager"
                 tools:itemCount="10"
                 tools:listitem="@layout/item_food_type" />
@@ -111,7 +168,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="17dp"
                         android:layout_weight="1"
-
                         android:fontFamily="@font/sofia_pro_regular_az"
                         android:text="View All >"
                         android:textAlignment="textEnd"
@@ -126,17 +182,20 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linear_search"
                     android:layout_marginTop="15dp"
+                    android:background="#00FFFFFF"
+                    android:clipToPadding="false"
                     android:orientation="horizontal"
+                    android:paddingStart="@dimen/_20sdp"
                     app:layoutManager="LinearLayoutManager"
                     tools:itemCount="10"
                     tools:listitem="@layout/item_featured_restaurants" />
             </LinearLayout>
 
             <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linear_featured"
+                android:clipToPadding="false"
                 android:orientation="vertical">
 
 
@@ -146,8 +205,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="3"
                     android:fontFamily="@font/sofia_pro_semi_bold_az"
-                    android:paddingHorizontal="25dp"
-
+                    android:paddingStart="@dimen/_20sdp"
                     android:text="Popular items"
                     android:textColor="@color/title_color"
                     android:textSize="18dp" />
@@ -159,7 +217,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linear_search"
                     android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
                     android:orientation="horizontal"
+                    android:paddingStart="@dimen/_20sdp"
                     app:layoutManager="LinearLayoutManager"
                     tools:itemCount="10"
                     tools:listitem="@layout/item_popular" />
@@ -167,6 +227,8 @@
 
 
         </RelativeLayout>
+
+
     </ScrollView>
 
 </RelativeLayout>

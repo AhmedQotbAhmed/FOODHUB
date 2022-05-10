@@ -13,6 +13,7 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.foodhub.R;
 import com.example.foodhub.ui.FoodDetails;
 import com.example.foodhub.ui.Home_Screen;
+import com.example.foodhub.ui.RestaurantProfile;
 import com.example.foodhub.ui.VerificationCode;
 
 public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Holder> {
@@ -58,8 +59,9 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Holder
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    context.startActivity(new Intent(context, FoodDetails.class));
+                    context.startActivity(new Intent(context, RestaurantProfile.class));
                     Animatoo.animateSlideLeft(context);
+
                 }
             });
 

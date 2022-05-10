@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:clipToPadding="false"
+    android:layout_height="wrap_content"
+  >
+
+    <TextView
+
+        android:id="@+id/lbl_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sofia_pro_bold_az"
+        android:text="Found
+\n30 results"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:textColor="@color/title_color"
+        android:textSize="31dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="23dp"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:id="@+id/CardView"
+        android:padding="@dimen/_10sdp"
+        android:paddingHorizontal="11dp"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="20dp">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@null">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:minHeight="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/popular_food" />
+
+            <RelativeLayout
+                android:id="@+id/relative_"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/img_rates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/auth_shape"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:padding="@dimen/_3sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rates"
+                    android:text="@string/_10_35"
+                    android:textColor="@color/title_color" />
+
+                <ImageView
+                    android:id="@+id/img_favorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_loved" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_rate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/card_view"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-27dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rates" />
+
+        <LinearLayout
+            android:id="@+id/linear_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="11dp">
+
+            <TextView
+                android:id="@+id/lbl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/sofia_pro_bold_az"
+
+                android:text="Red n hot pizza"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_de1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_name"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="11dp">
+
+
+
+                <TextView
+                    android:clipToPadding="false"
+                    android:id="@+id/lbl_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/sofia_pro_light_az"
+                    android:text="Spicy chicken, beef"
+                    android:textColor="@color/hint_color"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="12dp" />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

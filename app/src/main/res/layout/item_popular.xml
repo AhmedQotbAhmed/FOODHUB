@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="155dp"
-    android:layout_height="220dp"
-    android:layout_marginEnd="-10dp"
-    android:layout_marginStart="25dp"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="@dimen/_180sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
     android:layout_marginBottom="10dp"
-    android:minWidth="155dp"
     android:paddingHorizontal="11dp"
+    android:clipToPadding="false"
     app:cardCornerRadius="15dp">
 
     <RelativeLayout
@@ -15,6 +14,7 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
+
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,9 +28,9 @@
                 android:src="@drawable/popular_food" />
 
             <RelativeLayout
+                android:paddingStart="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:orientation="horizontal">
 
                 <ImageView

@@ -139,6 +139,7 @@
                 android:translationX="60dp"
                 android:translationY="60dp" />
         </androidx.cardview.widget.CardView>
+
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
@@ -148,6 +149,7 @@
             android:text="Eljad Eendaz"
             android:textColor="@color/title_color"
             android:textSize="20dp" />
+
         <TextView
             android:id="@+id/edit_profile"
             android:layout_width="wrap_content"
@@ -162,6 +164,6 @@
     <include
         layout="@layout/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/toolbar" />
 </RelativeLayout>

@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class Login extends AppCompatActivity {
+public class Login extends GlobalMethod {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void forgot_password(View view) {
-        startActivity(new Intent(Login.this, RessetPassword.class));
-        Animatoo.animateSlideLeft(Login.this);
+
+        go_screen(RessetPassword.class);
     }
 }

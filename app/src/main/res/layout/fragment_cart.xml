@@ -2,14 +2,227 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:textSize="50dp"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Cart" />
+        android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      />
+    <include layout="@layout/item_cart" />
+    <include layout="@layout/item_cart" />
+    <include layout="@layout/item_cart" />
+    <LinearLayout
+        android:elevation="30dp"
+        android:clipToPadding="false"
+        android:paddingStart="24dp"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="27dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Subtotal"
+                android:textColor="@color/title_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_toStartOf="@+id/le"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="$52.50"
+                android:textColor="@color/title_color"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/le"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sofia_pro_regular_az"
+                android:text="LE"
+                android:textColor="@color/hint_color"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/hint_light_color"
+            android:paddingHorizontal="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Tax and Fees"
+                android:textColor="@color/title_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_toStartOf="@+id/le"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="$5.25"
+                android:textColor="@color/title_color"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/le"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sofia_pro_regular_az"
+                android:text="LE"
+                android:textColor="@color/hint_color"
+                android:textSize="14dp"
+                tools:ignore="DuplicateIds" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/hint_light_color"
+            android:paddingHorizontal="25dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Delivery"
+                android:textColor="@color/title_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_toStartOf="@+id/le"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="$1.33"
+                android:textColor="@color/title_color"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/le"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sofia_pro_regular_az"
+                android:text="LE"
+                android:textColor="@color/hint_color"
+                android:textSize="14dp"
+                tools:ignore="DuplicateIds" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/hint_light_color"
+            android:paddingHorizontal="25dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/sofia_pro_medium_az"
+            android:text="Total"
+            android:textColor="@color/title_color"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/total_price"
+            android:fontFamily="@font/sofia_pro_medium_az"
+            android:text="(3 items)"
+            android:textColor="@color/title_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/le"
+            android:fontFamily="@font/sofia_pro_medium_az"
+            android:text="$59.08"
+            android:textColor="@color/title_color"
+            android:textSize="21dp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/le"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sofia_pro_regular_az"
+                android:text="LE"
+                android:textColor="@color/hint_color"
+                android:textSize="14dp"
+                tools:ignore="DuplicateIds" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lbl_login"
+            android:layout_marginHorizontal="63dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/buttom_shape"
+            android:fontFamily="@font/sofia_pro_bold_az"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:paddingVertical="15dp"
+            android:text="Checkout"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

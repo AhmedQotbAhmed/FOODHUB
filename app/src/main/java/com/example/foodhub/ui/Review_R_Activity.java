@@ -8,9 +8,10 @@ import android.widget.RatingBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class Review_R_Activity extends AppCompatActivity {
+public class Review_R_Activity extends GlobalMethod {
     RatingBar rt;
 
     @Override

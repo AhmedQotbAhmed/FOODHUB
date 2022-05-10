@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:cardCornerRadius="100dp">
+
+
+    <TextView
+        android:id="@+id/lbl_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/sofia_pro_medium_az"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_14sdp"
+        android:text="Burger"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+
+</androidx.cardview.widget.CardView>

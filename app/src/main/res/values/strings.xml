@@ -11,14 +11,16 @@
     <string name="brown_th">Brown the beef better. Lean ground beef – I like to use 85% lean angus. Garlic – use fresh chopped. Spices – chili powder, cumin, onion powder.</string>
     <string name="_25min">25<font size='15'>min</font></string>
     <string name="__9_50"><font color='#FE724C' size='20'>$</font>9.50</string>
-    <string name="Eljad_Eendaz"><font color='#111719' size='12'>Eljad Eendaz</font></string>
-    <string name="My_Orders"><font color='#111719' size='12'> My Orders</font></string>
-    <string name="My_Profile"><font color='#111719' size='12'> My Profile</font></string>
-    <string name="Delivery_Address"><font color='#111719' size='12'> Delivery Address</font></string>
-    <string name="Payment_Methods"><font color='#111719' size='12'> Payment Methods</font></string>
-    <string name="Contact_Us"><font color='#111719' size='12'> Contact Us</font></string>
-    <string name="Settings"><font color='#111719' size='12'> Settings</font></string>
-    <string name="Helps_FAQs"><font color='#111719' size='12'> Helps &amp; FAQs</font></string>
+    <string name="Eljad_Eendaz"><font color='#111719'>Eljad Eendaz</font></string>
+    <string name="My_Orders"><font color='#111719'> My Orders</font></string>
+    <string name="My_Profile"><font color='#111719'> My Profile</font></string>
+    <string name="Delivery_Address"><font color='#111719'> Delivery Address</font></string>
+    <string name="Payment_Methods"><font color='#111719'> Payment Methods</font></string>
+    <string name="Contact_Us"><font color='#111719'> Contact Us</font></string>
+    <string name="Settings"><font color='#111719'> Settings</font></string>
+    <string name="Helps_FAQs"><font color='#111719'> Helps &amp; FAQs</font></string>
+    <string name="Pretty">Deliver to</string>
+    <string name="_10_35"><font color='#FE724C' size='8'>$</font>10.35</string>
 
 
 </resources>

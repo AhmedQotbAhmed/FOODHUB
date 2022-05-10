@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:paddingHorizontal="25dp"
-    android:paddingVertical="30dp"
-    android:layout_height="80dp"
-
+    android:clipToPadding="false"
+    android:paddingTop="40dp"
+    android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-
     <ImageButton
-
-        android:layout_marginStart= "-14dp"
+        android:layout_marginTop="-2dp"
         android:id="@+id/navigation_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_marginStart="-14dp"
         android:layout_weight="1"
         android:background="@null"
+        android:onClick="back"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_menu" />
+        android:src="@drawable/ic_back" />
 
     <TextView
         android:gravity="center"
@@ -30,7 +30,7 @@
         android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:text="Deliver to \n 4102  Pretty View Lane"
+        android:text= ""
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -39,6 +39,7 @@
         android:layout_gravity="center_vertical"
         android:layout_weight="1"
         android:id="@+id/icon_profile"
+        android:scaleType="centerCrop"
         android:layout_width="0dp"
         android:layout_marginEnd="-15dp"
         android:layout_height="wrap_content"

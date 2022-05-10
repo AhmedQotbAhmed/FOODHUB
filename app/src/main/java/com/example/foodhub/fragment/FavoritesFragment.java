@@ -30,4 +30,5 @@ public class FavoritesFragment extends Fragment {
 
    return view;
     }
+
 }

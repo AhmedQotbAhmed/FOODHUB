@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@color/background"
     tools:context=".ui.WelcomeActivity">
 
     <!--  background  -->
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_weight="1"
-                android:background="@drawable/authentication_shape"
+                android:background="@drawable/auth_shape"
                 android:orientation="horizontal"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="13dp">
@@ -102,7 +102,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/authentication_shape"
+                android:background="@drawable/auth_shape"
                 android:orientation="horizontal"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="13dp">

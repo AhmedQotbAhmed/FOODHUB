@@ -31,7 +31,7 @@
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
             android:elevation="0dp"
-            android:background="@drawable/authentication_shape"
+            android:background="@drawable/auth_shape"
             android:orientation="horizontal"
             android:paddingHorizontal="10dp"
             android:paddingVertical="13dp">
@@ -57,11 +57,10 @@
         </LinearLayout>
 
         <LinearLayout
-
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/authentication_shape"
+            android:background="@drawable/auth_shape"
             android:orientation="horizontal"
             android:paddingHorizontal="10dp"
             android:paddingVertical="13dp">
@@ -213,6 +212,7 @@
             android:paddingVertical="18dp"
             android:textSize="18sp" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/linear_lbl_email"
         android:layout_width="match_parent"

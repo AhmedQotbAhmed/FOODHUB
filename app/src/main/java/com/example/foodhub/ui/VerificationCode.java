@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.foodhub.GlobalMethod;
 import com.example.foodhub.R;
 
-public class VerificationCode extends AppCompatActivity {
+public class VerificationCode extends GlobalMethod {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,7 @@ public class VerificationCode extends AppCompatActivity {
     }
 
     public void change_password(View view) {
-        startActivity(new Intent(VerificationCode.this, Home_Screen.class));
-        Animatoo.animateSlideLeft(VerificationCode.this);
+
+        go_screen(Home_Screen.class);
     }
 }

@@ -4,6 +4,72 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BookiTDriver/caches/transforms-3/f72271d0642836f8863087a975e8ed27/transformed/jetified-residemenu-1.6/res/layout/residemenu.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable-v24/fav_btn.xml" value="0.247" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/auth_em_ph_shape.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/authentication_shape.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/buttom_shape.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/food_type_shape.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/food_type_shape_item.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_back.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_clock.xml" value="0.196" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_delivery.xml" value="0.196" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_filter.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_google.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_marker.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_menu.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_re.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/ic_stare_rated.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/shape_bg_profile.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/shape_buttom_light.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/shape_buttom_t.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/shape_toggle.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/drawable/shape_toggle_2.xml" value="0.2865" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_delivery_address.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_login.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_profile.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_sign_up.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_splash.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_verification_code.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/activity_welcome.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/delivery_address.xml" value="0.36666666666666664" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/filter_screen.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/food_details.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/fragment_cart.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/fragment_favorites.xml" value="0.1953125" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/fragment_maps.xml" value="0.22" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/home_screen.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_add_extra.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_cart.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_delivery_address.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_featured_restaurants.xml" value="0.5" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_food_item.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_food_search.xml" value="0.5" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_food_short_by.xml" value="0.18802083333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_food_type.xml" value="0.36666666666666664" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_food_type_filter.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_popular.xml" value="0.2" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_restturant_history.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_restturant_history_upcoming.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/item_search_restturant.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/items_favorites_food.xml" value="0.36666666666666664" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/menu_left_drawer.xml" value="0.2" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/my_orders_history.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/new_address.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/onboarding.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/onboarding_item.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/order_details.xml" value="0.2" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/phone_registration.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/resset_password.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/restaurant_profile.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/review_food.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/review_resturent.xml" value="0.1" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/search_food.xml" value="0.24114583333333334" />
+        <entry key="..\:/FOODHUB/app/src/main/res/layout/toolbar.xml" value="0.22" />
+        <entry key="..\:/FOODHUB/app/src/main/res/menu/left.xml" value="0.2520833333333333" />
+        <entry key="..\:/FOODHUB/app/src/main/res/menu/right.xml" value="0.2520833333333333" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/add.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/add_to_cart.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/auth_em_ph_shape.xml" value="0.171" />
@@ -46,6 +112,7 @@
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_bg_profile.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_buttom_light.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_onboarding.xml" value="0.171" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_r.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_toggle.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_toggle_1.xml" value="0.224" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/drawable/shape_toggle_2.xml" value="0.224" />
@@ -59,6 +126,7 @@
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_verification_code.xml" value="0.1953125" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/fav_btn.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/food_details.xml" value="0.18206521739130435" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/food_type_shape.xml" value="0.17685185185185184" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/fragment_cart.xml" value="0.36666666666666664" />
@@ -66,15 +134,21 @@
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/fragment_maps.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/home_screen.xml" value="0.22" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/ic_baseline_arrow_back_ios_24.xml" value="0.36666666666666664" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item__cart.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_add_extra.xml" value="0.18206521739130435" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_cart.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_delivery address.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_delivery_address.xml" value="0.28940217391304346" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_featured_restaurants.xml" value="0.33" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_food_item.xml" value="0.35104166666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_food_type.xml" value="0.23177083333333334" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_foodtype.xml" value="0.5" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_popular.xml" value="0.23177083333333334" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_restturant_history.xml" value="0.2" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_restturant_history_upcoming.xml" value="0.333786231884058" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_search__restturant.xml" value="0.36666666666666664" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/item_search_restturant.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/layout_screen.xml" value="0.358695652173913" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/menu_left.xml" value="0.36666666666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/my_orders_history.xml" value="0.22" />
@@ -84,6 +158,7 @@
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/order_details.xml" value="0.1" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/phone_registration.xml" value="0.2" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/resset_password.xml" value="0.18" />
+        <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/restaurant_profile.xml" value="0.35104166666666664" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/review_food.xml" value="0.14" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/review_resturent.xml" value="0.25" />
         <entry key="..\:/projects/FOODHUB/app/src/main/res/layout/splash.xml" value="0.1" />

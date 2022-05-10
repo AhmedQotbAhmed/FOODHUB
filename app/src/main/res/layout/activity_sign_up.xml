@@ -14,6 +14,11 @@
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_background" />
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/toolbar" />
 
     <LinearLayout
         android:id="@+id/linear_sign_up"
@@ -30,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:background="@drawable/authentication_shape"
+            android:background="@drawable/auth_shape"
             android:orientation="horizontal"
             android:paddingHorizontal="10dp"
             android:paddingVertical="13dp">
@@ -60,7 +65,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/authentication_shape"
+            android:background="@drawable/auth_shape"
             android:orientation="horizontal"
             android:paddingHorizontal="10dp"
             android:paddingVertical="13dp">

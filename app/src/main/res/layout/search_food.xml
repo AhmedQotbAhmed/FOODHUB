@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.SearchFood">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:id="@+id/linear_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_like_order"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+
+                >
+
+                <SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.2"
+                    android:background="@drawable/search_shape"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@android:color/transparent"
+                    android:queryHint="Find for food or restaurant..."
+                    android:searchIcon="@drawable/ic_search"
+                    android:theme="@style/ActionBarThemeOverlay" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_2sdp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/shape_buttom_t"
+                    android:cropToPadding="false"
+                    android:onClick="filter"
+                    android:padding="@dimen/_11sdp"
+
+                    android:src="@drawable/ic_filter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/shape_toggle"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <Button
+                    android:id="@+id/btn_upcoming"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_toggle_2"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:onClick="onClick"
+                    android:text="Food Item"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btn_history"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_toggle_1"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:onClick="onClick"
+                    android:text="Resturent"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <!--            android:nestedScrollingEnabled="false"-->
+            <!--            android:overScrollMode="never"-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/search_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingStart="@dimen/_15sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:itemCount="10"
+                tools:listitem="@layout/item_food_search" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

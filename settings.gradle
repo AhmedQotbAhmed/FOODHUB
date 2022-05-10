@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FOODHUB"
 include ':app'
+include ':slidingrootnavigation'

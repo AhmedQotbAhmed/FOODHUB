@@ -2,14 +2,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".fragment.FavoritesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/shape_toggle"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <Button
+                    android:id="@+id/btn_upcoming"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_toggle_2"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:onClick="onClick"
+                    android:text="Food Items"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btn_history"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_toggle_1"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:onClick="onClick"
+                    android:text="Resturents"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <include layout="@layout/items_favorites_food" />
+
+            <include layout="@layout/items_favorites_food" />
+
+            <include layout="@layout/items_favorites_food" />
+
+            <include layout="@layout/items_favorites_food" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

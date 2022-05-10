@@ -14,6 +14,8 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.example.foodhub.R;
 
 import java.util.ArrayList;
@@ -22,11 +24,10 @@ import java.util.List;
 public class FoodTypesAdapter extends RecyclerView.Adapter<FoodTypesAdapter.Holder> {
     Context context;
 
-    List<CardView> cardViewList = new ArrayList<>();
-    List<TextView> textList = new ArrayList<>();
+
+    Holder lastHolder = null;
 
 
-    GestureDetector mGestureDetector;
 
     public FoodTypesAdapter(Context context) {
         this.context = context;
@@ -37,25 +38,21 @@ public class FoodTypesAdapter extends RecyclerView.Adapter<FoodTypesAdapter.Hold
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Holder holder = new Holder(LayoutInflater.from(context).inflate(R.layout.item_food_type, parent, false));
-        cardViewList.add(holder.cardView);
-        textList.add(holder.lbl_type_name);
+
         holder.cardView.setAlpha((float) 0.8);
-        if (cardViewList.size() == 1) {
-            holder.cardView.setCardBackgroundColor(context.getResources().getColor(R.color.orange));
-            holder.cardView.setAlpha(1);
-            holder.lbl_type_name.setTextColor(Color.parseColor("#FFFFFF"));
-        }
+
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                //All card color is set to colorDefault
-                set_styleDefault();
-                //The selected card is set to colorSelected
-                holder.cardView.setCardBackgroundColor(context.getResources().getColor(R.color.orange));
-                holder.cardView.setAlpha(1);
-                holder.lbl_type_name.setTextColor(Color.parseColor("#FFFFFF"));
+                if (lastHolder != null)
+                    set_styleColor(lastHolder, "#000000", (float) 0.8, R.color.white);
+                set_styleColor(holder, "#FFFFFF", (float) 1, R.color.orange);
+                lastHolder = holder;
+                YoYo.with(Techniques.ZoomInUp)
+                        .duration(500)
+                        .playOn(holder.cardView);
             }
         });
         return holder;
@@ -63,7 +60,17 @@ public class FoodTypesAdapter extends RecyclerView.Adapter<FoodTypesAdapter.Hold
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
+        if (position == 0) {
+            set_styleColor(holder, "#FFFFFF", (float) 1, R.color.orange);
+            lastHolder = holder;
+        }
 
+    }
+
+    void set_styleColor(Holder holder, String textColor, float alpha, int BackgroundColor) {
+        holder.cardView.setCardBackgroundColor(context.getResources().getColor(BackgroundColor));
+        holder.lbl_type_name.setTextColor(Color.parseColor(textColor));
+        holder.cardView.setAlpha((float) alpha);
 
     }
 
@@ -74,7 +81,7 @@ public class FoodTypesAdapter extends RecyclerView.Adapter<FoodTypesAdapter.Hold
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 6;
     }
 
 
@@ -92,13 +99,5 @@ public class FoodTypesAdapter extends RecyclerView.Adapter<FoodTypesAdapter.Hold
         }
     }
 
-    void set_styleDefault() {
-        for (int i = 0; i < cardViewList.size(); i++) {
-            cardViewList.get(i).setCardBackgroundColor(context.getResources().getColor(R.color.white));
-            cardViewList.get(i).setAlpha((float) 0.8);
-            textList.get(i).setTextColor(Color.parseColor("#000000"));
-        }
-
-    }
 
 }

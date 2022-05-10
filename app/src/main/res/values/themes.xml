@@ -13,6 +13,7 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowFullscreen" >false</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="ActionBarThemeOverlay">
@@ -22,6 +23,10 @@
     <style name="MyRadioButton" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">@color/hint_light_color70</item>
         <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+    <style name="AppTheme.FullBackground" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/background</item>
     </style>
 
 </resources>
