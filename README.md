@@ -3,14 +3,23 @@
 Foodhub:  is a Food Delivery Application that has Features like Tracing your order, search filter, nearest Restaurant ...etc
 
 Technology Used:
+<br/>
 ● Retrofit
+<br/>
 ● Firebase
+<br/>
 ● Preferences
+<br/>
 ● Fragment
+<br/>
 ● Navigation
+<br/>
 ● RecyclerView
+<br/>
 ● Material Design
+<br/>
 ● MVVM
+<br/>
 ● Map
 
 <br/>
